@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Some title</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+
+    <!-- Кнопка для открытия всплывающего окна modal -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <button type="button" class="btn btn-danger bth lg" data-bs-toggle="modal" data-bs-target="#modal" style="width: 100%">
+            Показать время
+          </button>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <!-- Всплывающее окно -->
+    <div class="modal fade" id="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modalt-title">Пименов Егор</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div>
+            <h1 id="time"></h1>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+  </body>
+</html>
